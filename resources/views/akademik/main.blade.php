@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@yield('title','Sistem Informasi TI')</title>
+<style>
+    main > .container {
+        padding: 60px 15px 0;
+    }
+</style>
+<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        @include('layouts.header')
+        <!--begin page content-->
+        <main class="flex-shrink-0">
+             <div class="container">
+                @yield('content')
+            </div>
+        </main>
+        @include('layouts.footer')
+        <script src="/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
